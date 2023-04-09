@@ -59,6 +59,7 @@ function editProduk($data){
     }else {
         $query = "UPDATE produk SET
         nama_produk = '$nama_produk',
+        foto_produk = '$foto_produk',
         harga_produk = '$harga_produk',
         stok_produk = '$stok_produk',
         deskripsi_produk = '$desk_produk' WHERE id_produk = '$id'";

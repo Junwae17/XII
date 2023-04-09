@@ -7,7 +7,7 @@ $data = query("SELECT * FROM produk");
 <div class="hero">
     <div class="hero-text">
         <?php if (isset($_SESSION["username"])) : ?>
-            <h1 style="font-size:50px; font-family:'Tangerine', serif;">Halo <?= $_SESSION["name"]; ?></h1>
+            <h1 style="font-size:50px; font-family:'Tangerine', serif;">Hi <strong><?= $_SESSION["name"]; ?></strong></h1>
             <h4>- Selamat Datang di JUNSTORE -</h4>
         <?php endif; ?>
         <?php if (!isset($_SESSION["username"])) : ?>
@@ -30,6 +30,7 @@ $data = query("SELECT * FROM produk");
                     <img src="foto/<?= $produk["foto_produk"]; ?>">
                     <h2><?= $produk["nama_produk"]; ?></h2>
                     <p>Rp. <?= number_format($produk["harga_produk"]); ?></p>
+                    <p>Barang Tersisa: <?= number_format($produk["stok_produk"]); ?></p>
                 </a>
             </div>
         <?php endforeach; ?>

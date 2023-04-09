@@ -9,7 +9,7 @@ button.dikirim{
     border-radius: 6px;
     margin-top: 20px;
     width: 100%;
-    background: #4682B4;
+    background: #7137C9;
     color: #fff;
     text-align: center;
 }
@@ -19,7 +19,7 @@ button.proses{
     border: none;
     border-radius: 6px;
     margin-top: 10px;
-    background: #019267;
+    background: #7137C9;
     color: #fff;
     width: 100%;
     text-align: center;
@@ -42,7 +42,7 @@ button.ditolak{
     display: flex;
     flex: wrap;
     padding: 0px 0px 20px 20px;
-    background-color: #FFF;
+    background-color: #7137C9;
     margin-top: 40px;
     border-radius: 10px;
 }
@@ -57,7 +57,7 @@ button.ditolak{
 
 .btn1{
     width: 100%;
-    background-color: #4682B4;
+    background-color: #7137C9;
     text-align: center;
 }
 

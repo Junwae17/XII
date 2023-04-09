@@ -53,9 +53,9 @@ $produk = query("SELECT * FROM produk");
 
                     <td><?= $i; ?></td>
                     <td><?= $data["nama_produk"]; ?></td>
-                    <td><?= number_format($data["harga_produk"]); ?></td>
+                    <td>Rp. <?= number_format($data["harga_produk"]); ?> ,-</td>
                     <td><?= $data["deskripsi_produk"]; ?></td>
-                    <td><img src="../foto/<?= $data["foto_produk"] ?>" width="100px" alt="" </td>
+                    <td><img src="../foto/<?= $data["foto_produk"] ?>" width="100px" alt=""> </td>
                     <td><?= $data["stok_produk"]; ?></td>
                     <td>
                         <a href="edit_produk.php?id=<?= $data["id_produk"]; ?>" onclick="return confirm('Apakah Anda yakin ingin edit data ini?')" class="edit">Edit</a>

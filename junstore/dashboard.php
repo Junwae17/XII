@@ -28,7 +28,7 @@ endif; ?>
             <p>Status = Di tolak <br> Mohon di periksa kembali data-data kamu, dan pastikan gaada yang salah ya</p>
         </div>
         <div class="data-transaksi">
-            <table>
+            <table border="1">
                 <tr>
                     <th>No</th>
                     <th>Nama Lengkap</th>

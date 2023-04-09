@@ -6,7 +6,7 @@
 <style>
     footer {
         padding: 2px 20px;
-        background-color: #FFFFFF;
+        background-color: #A9D400;
         bottom: 0;
         text-align: center;
         margin-top: 70px;

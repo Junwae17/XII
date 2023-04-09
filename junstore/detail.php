@@ -7,7 +7,7 @@ $data = query("SELECT * FROM produk WHERE id_produk = $id")[0];
 <div class="container">
     <div class="text-produk">
         <h2>Produk Terbaru</h2>
-    </div><hr>
+    </div>
 
     <div class="wrapper-detail-produk">
         <div class="item">
@@ -16,8 +16,8 @@ $data = query("SELECT * FROM produk WHERE id_produk = $id")[0];
         <form action="" method="post">
             <div class="detail-produk">
                 <h4 class="nama-produk">Nama Produk:&nbsp;<?= $data["nama_produk"];?></h4>
-                <p class="harga_produk">Harga: Rp. <?=$data["harga_produk"];?></p>
-                <p class="deskripsi_produk">Deskripsi:&nbsp;<?=$data["deskripsi_produk"];?></p><br><br>
+                <p class="harga_produk">Harga: Rp. <?= number_format($data["harga_produk"]) ;?>,-</p>
+                <p class="deskripsi_produk">Deskripsi:&nbsp;<?=$data["deskripsi_produk"];?></p>
                 <p class="stok_produk">Stok &nbsp;<?=$data["stok_produk"];?></p>
                 <label>Jumlah</label>
                 <input type="number" name="qty" value="1">
@@ -26,7 +26,7 @@ $data = query("SELECT * FROM produk WHERE id_produk = $id")[0];
             </div>
         </form>
     </div>
-</div><hr>
+</div>
 
 <?php
     if (isset($_POST["beli"])) {

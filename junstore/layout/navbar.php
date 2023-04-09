@@ -27,7 +27,7 @@ require 'function.php';
                     <a href="cart.php">Keranjang</a>
                 </li>
                 <li>
-                    <a href="dashboard.php">Dasboard</a>
+                    <a href="dashboard.php">Dashboard</a>
                 </li>
                 <?php if(isset($_SESSION["username"])): ?>
                     <li>

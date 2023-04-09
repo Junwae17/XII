@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Mar 2022 pada 14.16
--- Versi server: 10.4.21-MariaDB
--- Versi PHP: 8.0.10
+-- Generation Time: Apr 04, 2023 at 03:57 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `produk`
+-- Table structure for table `produk`
 --
 
 CREATE TABLE `produk` (
@@ -37,19 +37,20 @@ CREATE TABLE `produk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `produk`
+-- Dumping data for table `produk`
 --
 
 INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga_produk`, `foto_produk`, `deskripsi_produk`, `stok_produk`) VALUES
-(5, 'Printer YCV10', '4599000', 'printer-canon-ts707-bisa-cetak-bolak-balik-otomatis-7GHsJeAzjl-removebg-preview.png', 'Printer pinter anti geter', '97'),
-(7, 'Printer YH26', '2430000', 'printer-canon-pixma-4.jpeg', 'Printer Aman', '634'),
-(9, 'Printer HP 9.0', '5499000', '4c13e06ffb82d691972dc88b3f1ae99f.jfif', 'Anti Lemot!', '889'),
-(11, 'Printer 9PTY', '4000000', 'WhatsApp Image 2022-03-10 at 13.14.03.jpeg', 'Printer Mantep', '899');
+(13, 'Lenovo Legion 5 Pro Gaming', '16000000', 'Popular_Lenovo_Legion_5_Pro_gaming_laptop_with_RTX_3070_drops_to_US_1099_for_Black_Friday_-_-removebg-preview.png', 'with RTX 3070, Black Friday', '45'),
+(14, 'ASUS - ROG Zephyrus G14 14', '27000000', 'ASUS_-_ROG_Zephyrus_G14_14__Gaming_Laptop_-_AMD_Ryzen_9_-_16GB_Memory_-_NVIDIA_GeForce_RTX_2060_-_1TB_SSD_-_Moonlight_White-removebg-preview.png', 'AMD Ryzen 9 - NVIDIA GeForce RTX 2060 - Moonlight White', '45'),
+(15, 'Razer Blade 15 Base', '18000000', 'Razer_Blade_15_Base_-_15_6__4K_OLED_Gaming_Laptop_-_Intel_Core_i7_-_NVIDIA_GeForce_RTX_2070_-_512GB_SSD_-_16GB_Memory_-_Mercury_White-removebg-preview.png', 'Intel Core i7 - NVIDIA GeForce RTX 2070 - Mercury White', '45'),
+(17, 'Asus’ ROG Zephyrus Duo 15', '30000000', 'Asus’ ROG Zephyrus Duo 15 is a gaming laptop with two screens.png', 'Gaming laptop with two screens', '45'),
+(19, 'iGlaze for MacBook Air 13', '20000000', 'Moshi_-_iGlaze_for_MacBook_Air_13__Thunderbolt_3_USB-C__-_Clear-removebg-preview.png', 'Thunderbolt 3/USB-C - Clear', '45');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transaksi`
+-- Table structure for table `transaksi`
 --
 
 CREATE TABLE `transaksi` (
@@ -65,23 +66,17 @@ CREATE TABLE `transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `transaksi`
+-- Dumping data for table `transaksi`
 --
 
 INSERT INTO `transaksi` (`id_transaksi`, `name`, `alamat`, `no_hp`, `nama_produk`, `harga_produk`, `subtotal`, `foto_produk`, `status`) VALUES
-(11, 'Kim Da-Mi', 'Jalan Sayur Ijo No. 3', '081560778910', 'Printer YCV10', '4599000', '9198000', 'printer-canon-ts707-bisa-cetak-bolak-balik-otomatis-7GHsJeAzjl-removebg-preview.png', 'ditolak'),
-(12, 'Kim Da-Mi', 'Jalan Sayur Ijo No. 3', '081560778910', 'Printer 9PTY', '4000000', '4000000', 'WhatsApp Image 2022-03-10 at 13.14.03.jpeg', 'dikirim'),
-(13, 'Umar', 'Jalan Kebon Jeruk 5', '081245779010', 'Printer YH26', '2430000', '12150000', 'printer-canon-pixma-4.jpeg', 'proses'),
-(14, 'Umar', 'Jalan Imam Bonjol 10', '085679801022', 'Printer YCV10', '4599000', '4599000', 'printer-canon-ts707-bisa-cetak-bolak-balik-otomatis-7GHsJeAzjl-removebg-preview.png', 'dikirim'),
-(15, 'Umar', 'Jalan Kebon Jeruk 5', '081245779010', 'Printer 9PTY', '4000000', '8000000', 'WhatsApp Image 2022-03-10 at 13.14.03.jpeg', 'ditolak'),
-(16, 'Bae Joo-Hyun', 'Jalan Batu Jajar No.3', '092819883831', 'Printer YH26', '2430000', '2430000', 'printer-canon-pixma-4.jpeg', 'dikirim'),
-(17, 'Jeon Jung-Kook', 'Jalan Sudirman No. IV', '089230198271', 'Printer YH26', '2430000', '4860000', 'printer-canon-pixma-4.jpeg', 'dikirim'),
-(18, 'Fahmi Muhammad', 'Jalan Batu Hiu IX', '089514132029', 'Printer YH26', '2430000', '7290000', 'printer-canon-pixma-4.jpeg', 'proses');
+(19, 'Shakyla Ananda Ramadanti', 'Petamburan 1', '085735362', 'iGlaze for MacBook Air 13', '20000000', '100000000', 'Moshi_-_iGlaze_for_MacBook_Air_13__Thunderbolt_3_USB-C__-_Clear-removebg-preview.png', 'dikirim'),
+(20, 'Shakyla Ananda Ramadanti', 'Petamburan 1', '087355245', 'Asus’ ROG Zephyrus Duo 15', '30000000', '150000000', 'Asus’ ROG Zephyrus Duo 15 is a gaming laptop with two screens.png', 'dikirim');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -93,60 +88,53 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `username`, `name`, `password`, `roles`) VALUES
-(1, 'mdzkfm', 'Muhammad Zaki Fahmi', '271004', 'Admin'),
-(2, 'aisyi', 'Aisyah Aisyi', '909090', 'Customer'),
-(3, 'ldh_sky', 'Lee Do-Hyun', 'ldh123', 'Admin'),
-(4, 'renebaebae', 'Bae Joo-Hyun', 'rene123', 'Customer'),
-(5, 'sooyaa', 'Kim Ji-Soo', 'jisoo123', 'Admin'),
-(6, 'da_mi', 'Kim Da-Mi', '890890', 'Customer'),
-(7, 'umara', 'Umar', '191919', 'Customer'),
-(10, 'jk', 'Jeon Jung-Kook', '202020', 'Customer'),
-(11, 'fahmi', 'Fahmi Muhammad', '202020', 'Customer');
+(1, 'juju', 'Arjuna Prasetya', '123', 'Admin'),
+(2, 'kylala', 'Shakyla Ananda Ramadanti', '123', 'Customer');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `produk`
+-- Indexes for table `produk`
 --
 ALTER TABLE `produk`
   ADD PRIMARY KEY (`id_produk`);
 
 --
--- Indeks untuk tabel `transaksi`
+-- Indexes for table `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD PRIMARY KEY (`id_transaksi`);
 
 --
--- Indeks untuk tabel `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `produk`
+-- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT untuk tabel `transaksi`
+-- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
--- AUTO_INCREMENT untuk tabel `user`
+-- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
   MODIFY `id_user` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;

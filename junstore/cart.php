@@ -21,7 +21,7 @@ if (empty($_SESSION["cart"] || isset($_SESSION["cart"]))) {
         width: 30%;
         border-radius: 10px;
         margin-bottom: 10px;
-        background-color: #fff;
+        background-color: #A9D400;
     }
 
     .card-cart img {
@@ -45,7 +45,7 @@ if (empty($_SESSION["cart"] || isset($_SESSION["cart"]))) {
     }
     
     .card-cart .text-card a.checkout{
-        background: #4682B4;
+        background: #7137C9;
         color: #fff;
         padding: 10px;
         text-decoration: none;
@@ -55,7 +55,7 @@ if (empty($_SESSION["cart"] || isset($_SESSION["cart"]))) {
     }
 
     .card-cart .text-card a.checkout:hover{
-        background: #326792;
+        background: #6021be;
         color: #fff;
         transition: 0.3s;
     }
